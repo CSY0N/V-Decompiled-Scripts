@@ -31,7 +31,7 @@
 	BOOL bLocal_29 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -50,23 +50,23 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	fLocal_27 = 0f;
 	fLocal_28 = 0f;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	Global_23232 = 0;
-	Global_21024 = 0;
+	Global_23352 = 0;
+	Global_21144 = 0;
 	func_18();
-	Global_20813.f_1 = 7;
-	func_17(Global_20794, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
-	func_16(Global_20794, "SET_HEADER", "CELL_4" /*Sidetasks*/, 0, 0, 0, 0);
+	Global_20930.f_1 = 7;
+	func_17(Global_20911, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
+	func_16(Global_20911, "SET_HEADER", "CELL_4" /*Sidetasks*/, 0, 0, 0, 0);
 
 	while (true)
 	{
 		SYSTEM::WAIT(0);
 	
-		if (Global_20813.f_1 != 9)
+		if (Global_20930.f_1 != 9)
 		{
-			switch (Global_20813.f_1)
+			switch (Global_20930.f_1)
 			{
 				case 7:
-					if (Global_23232 == 0)
+					if (Global_23352 == 0)
 					{
 						func_15();
 						func_14();
@@ -75,7 +75,7 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 					break;
 			
 				case 8:
-					if (Global_23232 == 1)
+					if (Global_23352 == 1)
 						func_5();
 					break;
 			
@@ -87,19 +87,19 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 					break;
 			}
 		
-			if (Global_23232 == 0)
+			if (Global_23352 == 0)
 			{
 				if (func_4())
 					func_3();
 			}
-			else if (func_2(FRONTEND_CONTROL, Global_20781, 0))
+			else if (func_2(FRONTEND_CONTROL, Global_20898, 0))
 			{
-				Global_20791 = true;
-				Global_23232 = 0;
-				Global_20813.f_1 = 7;
+				Global_20908 = true;
+				Global_23352 = 0;
+				Global_20930.f_1 = 7;
 				func_18();
-				func_17(Global_20794, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
-				func_16(Global_20794, "SET_HEADER", "CELL_4" /*Sidetasks*/, 0, 0, 0, 0);
+				func_17(Global_20911, "DISPLAY_VIEW", 14f, -1082130432, -1082130432, -1082130432, -1082130432);
+				func_16(Global_20911, "SET_HEADER", "CELL_4" /*Sidetasks*/, 0, 0, 0, 0);
 			}
 		}
 	
@@ -110,18 +110,18 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-BOOL func_1() // Position - 0x163 Hash - 0x57EB5377 ^0xDC0824ED
+BOOL func_1() // Position - 0x163
 {
-	if (Global_20813.f_1 == 1 || Global_20813.f_1 == 3 || Global_20813.f_1 == 0 || Global_20757 == 1)
+	if (Global_20930.f_1 == 1 || Global_20930.f_1 == 3 || Global_20930.f_1 == 0 || Global_20874 == 1)
 	{
-		Global_20800 = 1;
+		Global_20917 = 1;
 		return true;
 	}
 
 	return false;
 }
 
-BOOL func_2(eControlType ectParam0, eControlAction ecaParam1, int iParam2) // Position - 0x1A6 Hash - 0xBB00BE4E ^0xA27687FD
+BOOL func_2(eControlType ectParam0, eControlAction ecaParam1, int iParam2) // Position - 0x1A6
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(ectParam0, ecaParam1) || iParam2 == 1 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(ectParam0, ecaParam1))
 	{
@@ -138,31 +138,31 @@ BOOL func_2(eControlType ectParam0, eControlAction ecaParam1, int iParam2) // Po
 	return false;
 }
 
-void func_3() // Position - 0x218 Hash - 0xCE5FB49E ^0x214A59D5
+void func_3() // Position - 0x218
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 	return;
 }
 
-BOOL func_4() // Position - 0x224 Hash - 0x1F39C732 ^0x92A1ED04
+BOOL func_4() // Position - 0x224
 {
-	if (Global_9289 == 1 || Global_20813.f_1 < 7)
+	if (Global_9406 == 1 || Global_20930.f_1 < 7)
 	{
-		Global_20800 = 1;
+		Global_20917 = 1;
 		return true;
 	}
 
 	return false;
 }
 
-void func_5() // Position - 0x24D Hash - 0xCD087DC ^0x44F70322
+void func_5() // Position - 0x24D
 {
 	GRAPHICS::DRAW_RECT(0.824f, 0.5f, 0.253f, 0.313f, 0, 0, 0, 155, false);
 	func_6();
 	return;
 }
 
-void func_6() // Position - 0x277 Hash - 0x7A1EBC31 ^0xD4625BB7
+void func_6() // Position - 0x277
 {
 	int i;
 
@@ -170,44 +170,44 @@ void func_6() // Position - 0x277 Hash - 0x7A1EBC31 ^0xD4625BB7
 	fLocal_28 = fLocal_26;
 	func_10(255, 255, 255, 205);
 	func_9();
-	func_8(fLocal_27, fLocal_28, &(Global_2139[Global_23454[iLocal_23 /*9*/] /*29*/].f_3), 0);
+	func_8(fLocal_27, fLocal_28, &(Global_2169[Global_23574[iLocal_23 /*9*/] /*29*/].f_3), 0);
 	fLocal_27 = fLocal_27 + 0.07f;
 	func_10(255, 255, 255, 205);
 
-	if (Global_23454[iLocal_23 /*9*/].f_2.f_1 < 10)
-		func_7(fLocal_27, fLocal_28, "CELL_506" /*~1~:0~1~*/, Global_23454[iLocal_23 /*9*/].f_2.f_2, Global_23454[iLocal_23 /*9*/].f_2.f_1);
+	if (Global_23574[iLocal_23 /*9*/].f_2.f_1 < 10)
+		func_7(fLocal_27, fLocal_28, "CELL_506" /*~1~:0~1~*/, Global_23574[iLocal_23 /*9*/].f_2.f_2, Global_23574[iLocal_23 /*9*/].f_2.f_1);
 	else
-		func_7(fLocal_27, fLocal_28, "CELL_503" /*~1~:~1~*/, Global_23454[iLocal_23 /*9*/].f_2.f_2, Global_23454[iLocal_23 /*9*/].f_2.f_1);
+		func_7(fLocal_27, fLocal_28, "CELL_503" /*~1~:~1~*/, Global_23574[iLocal_23 /*9*/].f_2.f_2, Global_23574[iLocal_23 /*9*/].f_2.f_1);
 
 	fLocal_27 = fLocal_27 + 0.07f;
 	func_10(255, 255, 255, 205);
-	func_7(fLocal_27, fLocal_28, "CELL_505" /*~1~/~1~*/, Global_23454[iLocal_23 /*9*/].f_2.f_3, Global_23454[iLocal_23 /*9*/].f_2.f_4);
+	func_7(fLocal_27, fLocal_28, "CELL_505" /*~1~/~1~*/, Global_23574[iLocal_23 /*9*/].f_2.f_3, Global_23574[iLocal_23 /*9*/].f_2.f_4);
 	fLocal_27 = fLocal_25;
 	func_10(255, 255, 255, 205);
 	fLocal_28 = fLocal_28 + 0.02f;
 
-	if (Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_8 == 0)
+	if (Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_8 == 0)
 		func_9();
 
 	HUD::SET_TEXT_WRAP(0f, 0.93f);
-	func_8(fLocal_27, fLocal_28, &(Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_4), 0);
+	func_8(fLocal_27, fLocal_28, &(Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_4), 0);
 	fLocal_28 = fLocal_28 + 0.07f;
 
-	for (i = 1; i <= Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_9; i = i + 1)
+	for (i = 1; i <= Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_9; i = i + 1)
 	{
 		func_10(255, 255, 255, 255);
 		fLocal_28 = fLocal_28 + 0.04f;
 	
-		if (Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_32[i] == -1)
-			func_8(fLocal_27, fLocal_28, &Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_10[i /*4*/], 0);
+		if (Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_32[i] == -1)
+			func_8(fLocal_27, fLocal_28, &Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_10[i /*4*/], 0);
 		else
-			func_7(fLocal_27, fLocal_28, &Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_10[i /*4*/], Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_27[i], Global_23285[Global_23454[iLocal_23 /*9*/].f_1 /*42*/].f_32[i]);
+			func_7(fLocal_27, fLocal_28, &Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_10[i /*4*/], Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_27[i], Global_23405[Global_23574[iLocal_23 /*9*/].f_1 /*42*/].f_32[i]);
 	}
 
 	return;
 }
 
-void func_7(float fParam0, float fParam1, const char* sParam2, int iParam3, int iParam4) // Position - 0x458 Hash - 0xB49C9E3A ^0xA43F5A6
+void func_7(float fParam0, float fParam1, const char* sParam2, int iParam3, int iParam4) // Position - 0x458
 {
 	HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT(sParam2);
 	HUD::ADD_TEXT_COMPONENT_INTEGER(iParam3);
@@ -216,14 +216,14 @@ void func_7(float fParam0, float fParam1, const char* sParam2, int iParam3, int 
 	return;
 }
 
-void func_8(float fParam0, float fParam1, const char* sParam2, int iParam3) // Position - 0x47B Hash - 0x3EDB9751 ^0x36A963FC
+void func_8(float fParam0, float fParam1, const char* sParam2, int iParam3) // Position - 0x47B
 {
 	HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT(sParam2);
 	HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fParam0, fParam1, iParam3);
 	return;
 }
 
-void func_9() // Position - 0x493 Hash - 0x6004D59C ^0x57268780
+void func_9() // Position - 0x493
 {
 	HUD::SET_TEXT_SCALE(0.4f, 0.4f);
 	HUD::SET_TEXT_COLOUR(255, 128, 0, 255);
@@ -231,7 +231,7 @@ void func_9() // Position - 0x493 Hash - 0x6004D59C ^0x57268780
 	return;
 }
 
-void func_10(int iParam0, int iParam1, int iParam2, int iParam3) // Position - 0x4BD Hash - 0xF5815B00 ^0x383DE471
+void func_10(int iParam0, int iParam1, int iParam2, int iParam3) // Position - 0x4BD
 {
 	HUD::SET_TEXT_SCALE(0.3f, 0.3f);
 	HUD::SET_TEXT_DROPSHADOW(0, 0, 0, 0, 0);
@@ -242,23 +242,23 @@ void func_10(int iParam0, int iParam1, int iParam2, int iParam3) // Position - 0
 	return;
 }
 
-void func_11() // Position - 0x4FC Hash - 0x5060BE7 ^0x5060BE7
+void func_11() // Position - 0x4FC
 {
-	if (func_2(FRONTEND_CONTROL, Global_20782, 0))
+	if (func_2(FRONTEND_CONTROL, Global_20899, 0))
 	{
 		iLocal_23 = uLocal_16[iLocal_22];
-		Global_23232 = 1;
-		func_12(Global_20794, "SET_DATA_SLOT", 15f, 0f, -1f, -1f, -1f, "CELL_287" /*Send Photo(s)*/, "CELL_280" /*Take Photo*/, "CELL_285" /*Move*/, "CELL_284" /*Zoom*/, 0);
-		func_17(Global_20794, "DISPLAY_VIEW", 15f, -1082130432, -1082130432, -1082130432, -1082130432);
-		func_16(Global_20794, "SET_HEADER", "CELL_4" /*Sidetasks*/, 0, 0, 0, 0);
-		Global_20813.f_1 = 8;
-		Global_23232 = 1;
+		Global_23352 = 1;
+		func_12(Global_20911, "SET_DATA_SLOT", 15f, 0f, -1f, -1f, -1f, "CELL_287" /*Send Photo(s)*/, "CELL_280" /*Take Photo*/, "CELL_285" /*Move*/, "CELL_284" /*Zoom*/, 0);
+		func_17(Global_20911, "DISPLAY_VIEW", 15f, -1082130432, -1082130432, -1082130432, -1082130432);
+		func_16(Global_20911, "SET_HEADER", "CELL_4" /*Sidetasks*/, 0, 0, 0, 0);
+		Global_20930.f_1 = 8;
+		Global_23352 = 1;
 	}
 
 	return;
 }
 
-void func_12(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, const char* sParam9, const char* sParam10, const char* sParam11) // Position - 0x57A Hash - 0x39E054FF ^0x41D02682
+void func_12(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, char* sParam8, const char* sParam9, const char* sParam10, const char* sParam11) // Position - 0x57A
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam2));
@@ -294,14 +294,14 @@ void func_12(int iParam0, char* sParam1, float fParam2, float fParam3, float fPa
 	return;
 }
 
-void func_13(const char* sParam0) // Position - 0x62D Hash - 0x8E2F5FE2 ^0x29D9D432
+void func_13(const char* sParam0) // Position - 0x62D
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	return;
 }
 
-void func_14() // Position - 0x63F Hash - 0x7D1B240B ^0xD73C37D7
+void func_14() // Position - 0x63F
 {
 	if (bLocal_29)
 		if (SYSTEM::TIMERA() > 50)
@@ -324,7 +324,7 @@ void func_14() // Position - 0x63F Hash - 0x7D1B240B ^0xD73C37D7
 
 	if (bLocal_29 == false)
 	{
-		if (func_2(FRONTEND_CONTROL, Global_20789, 0))
+		if (func_2(FRONTEND_CONTROL, Global_20906, 0))
 		{
 			if (iLocal_22 > 0)
 				iLocal_22 = iLocal_22 - 1;
@@ -333,7 +333,7 @@ void func_14() // Position - 0x63F Hash - 0x7D1B240B ^0xD73C37D7
 			SYSTEM::SETTIMERA(0);
 		}
 	
-		if (func_2(FRONTEND_CONTROL, Global_20790, 0))
+		if (func_2(FRONTEND_CONTROL, Global_20907, 0))
 		{
 			iLocal_22 = iLocal_22 + 1;
 		
@@ -348,7 +348,7 @@ void func_14() // Position - 0x63F Hash - 0x7D1B240B ^0xD73C37D7
 	return;
 }
 
-void func_15() // Position - 0x6DC Hash - 0x99AC1812 ^0x99AC1812
+void func_15() // Position - 0x6DC
 {
 	int num;
 
@@ -364,18 +364,18 @@ void func_15() // Position - 0x6DC Hash - 0x99AC1812 ^0x99AC1812
 		if (num == iLocal_22)
 			func_9();
 	
-		func_8(fLocal_27, fLocal_28, &(Global_2139[Global_23454[uLocal_16[num] /*9*/] /*29*/].f_3), 0);
+		func_8(fLocal_27, fLocal_28, &(Global_2169[Global_23574[uLocal_16[num] /*9*/] /*29*/].f_3), 0);
 		fLocal_27 = fLocal_27 + 0.07f;
 		func_10(255, 255, 255, 205);
 	
-		if (Global_23454[uLocal_16[num] /*9*/].f_2.f_1 < 10)
-			func_7(fLocal_27, fLocal_28, "CELL_506" /*~1~:0~1~*/, Global_23454[uLocal_16[num] /*9*/].f_2.f_2, Global_23454[uLocal_16[num] /*9*/].f_2.f_1);
+		if (Global_23574[uLocal_16[num] /*9*/].f_2.f_1 < 10)
+			func_7(fLocal_27, fLocal_28, "CELL_506" /*~1~:0~1~*/, Global_23574[uLocal_16[num] /*9*/].f_2.f_2, Global_23574[uLocal_16[num] /*9*/].f_2.f_1);
 		else
-			func_7(fLocal_27, fLocal_28, "CELL_503" /*~1~:~1~*/, Global_23454[uLocal_16[num] /*9*/].f_2.f_2, Global_23454[uLocal_16[num] /*9*/].f_2.f_1);
+			func_7(fLocal_27, fLocal_28, "CELL_503" /*~1~:~1~*/, Global_23574[uLocal_16[num] /*9*/].f_2.f_2, Global_23574[uLocal_16[num] /*9*/].f_2.f_1);
 	
 		fLocal_27 = fLocal_27 + 0.07f;
 		func_10(255, 255, 255, 205);
-		func_7(fLocal_27, fLocal_28, "CELL_505" /*~1~/~1~*/, Global_23454[uLocal_16[num] /*9*/].f_2.f_3, Global_23454[uLocal_16[num] /*9*/].f_2.f_4);
+		func_7(fLocal_27, fLocal_28, "CELL_505" /*~1~/~1~*/, Global_23574[uLocal_16[num] /*9*/].f_2.f_3, Global_23574[uLocal_16[num] /*9*/].f_2.f_4);
 		fLocal_27 = fLocal_25;
 		func_10(255, 255, 255, 205);
 	
@@ -384,7 +384,7 @@ void func_15() // Position - 0x6DC Hash - 0x99AC1812 ^0x99AC1812
 	
 		fLocal_28 = fLocal_28 + 0.02f;
 		HUD::SET_TEXT_WRAP(0f, 0.93f);
-		func_8(fLocal_27, fLocal_28, &Global_23285[Global_23454[uLocal_16[num] /*9*/].f_1 /*42*/], 0);
+		func_8(fLocal_27, fLocal_28, &Global_23405[Global_23574[uLocal_16[num] /*9*/].f_1 /*42*/], 0);
 		fLocal_28 = fLocal_28 + 0.05f;
 		num = num + 1;
 	}
@@ -392,7 +392,7 @@ void func_15() // Position - 0x6DC Hash - 0x99AC1812 ^0x99AC1812
 	return;
 }
 
-void func_16(int iParam0, char* sParam1, char* sParam2, const char* sParam3, const char* sParam4, const char* sParam5, const char* sParam6) // Position - 0x83F Hash - 0xD2A7E1F6 ^0x3BA00BEB
+void func_16(int iParam0, char* sParam1, char* sParam2, const char* sParam3, const char* sParam4, const char* sParam5, const char* sParam6) // Position - 0x83F
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, sParam1);
 	func_13(sParam2);
@@ -413,7 +413,7 @@ void func_16(int iParam0, char* sParam1, char* sParam2, const char* sParam3, con
 	return;
 }
 
-void func_17(int iParam0, char* sParam1, float fParam2, int iParam3, int iParam4, int iParam5, int iParam6) // Position - 0x89A Hash - 0x5F496D0E ^0x86F8205
+void func_17(int iParam0, char* sParam1, float fParam2, int iParam3, int iParam4, int iParam5, int iParam6) // Position - 0x89A
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam2));
@@ -434,7 +434,7 @@ void func_17(int iParam0, char* sParam1, float fParam2, int iParam3, int iParam4
 	return;
 }
 
-void func_18() // Position - 0x8FD Hash - 0x94FD0942 ^0x76E23858
+void func_18() // Position - 0x8FD
 {
 	var unk;
 	int i;
@@ -448,17 +448,17 @@ void func_18() // Position - 0x8FD Hash - 0x94FD0942 ^0x76E23858
 	{
 		num = 0;
 		num2 = 3;
-		Global_23454[num2 /*9*/].f_2 = -1;
-		Global_23454[num2 /*9*/].f_2.f_1 = 0;
-		Global_23454[num2 /*9*/].f_2.f_2 = 0;
-		Global_23454[num2 /*9*/].f_2.f_3 = 0;
-		Global_23454[num2 /*9*/].f_2.f_5 = 0;
+		Global_23574[num2 /*9*/].f_2 = -1;
+		Global_23574[num2 /*9*/].f_2.f_1 = 0;
+		Global_23574[num2 /*9*/].f_2.f_2 = 0;
+		Global_23574[num2 /*9*/].f_2.f_3 = 0;
+		Global_23574[num2 /*9*/].f_2.f_5 = 0;
 	
 		while (num < 4)
 		{
 			if (unk[num] == 0)
-				if (Global_23454[num /*9*/].f_8 != 0)
-					if (func_19(Global_23454[num /*9*/].f_2, Global_23454[num2 /*9*/].f_2))
+				if (Global_23574[num /*9*/].f_8 != 0)
+					if (func_19(Global_23574[num /*9*/].f_2, Global_23574[num2 /*9*/].f_2))
 						num2 = num;
 		
 			num = num + 1;
@@ -467,15 +467,15 @@ void func_18() // Position - 0x8FD Hash - 0x94FD0942 ^0x76E23858
 		uLocal_16[i] = num2;
 		unk[num2] = 1;
 	
-		if (Global_23454[i /*9*/].f_8 != 0)
+		if (Global_23574[i /*9*/].f_8 != 0)
 			iLocal_21 = iLocal_21 + 1;
 	}
 
-	func_12(Global_20794, "SET_DATA_SLOT", 14f, 0f, 25f, -1f, -1f, "CELL_287" /*Send Photo(s)*/, "CELL_280" /*Take Photo*/, 0, 0, 0);
+	func_12(Global_20911, "SET_DATA_SLOT", 14f, 0f, 25f, -1f, -1f, "CELL_287" /*Send Photo(s)*/, "CELL_280" /*Take Photo*/, 0, 0, 0);
 	return;
 }
 
-BOOL func_19(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, int iParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11) // Position - 0x9E8 Hash - 0x87F973EB ^0x688F177D
+BOOL func_19(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, int iParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11) // Position - 0x9E8
 {
 	int num;
 	int num2;

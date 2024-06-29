@@ -46,7 +46,7 @@
 	int iLocal_44 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	int scaleformHandle;
 
@@ -110,7 +110,7 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-BOOL func_1(var uParam0, BOOL bParam1) // Position - 0xEF Hash - 0xD5E03AC ^0x85ABBFC6
+BOOL func_1(var uParam0, BOOL bParam1) // Position - 0xEF
 {
 	if (!func_8(&(uParam0->f_2)))
 		func_6(&(uParam0->f_2));
@@ -135,7 +135,7 @@ BOOL func_1(var uParam0, BOOL bParam1) // Position - 0xEF Hash - 0xD5E03AC ^0x85
 	return true;
 }
 
-void func_2(var uParam0) // Position - 0x175 Hash - 0x4ECF353C ^0xF00161
+void func_2(var uParam0) // Position - 0x175
 {
 	uParam0->f_1 = 0f;
 	uParam0->f_2 = 0f;
@@ -143,7 +143,7 @@ void func_2(var uParam0) // Position - 0x175 Hash - 0x4ECF353C ^0xF00161
 	return;
 }
 
-float func_3(var uParam0) // Position - 0x18B Hash - 0x4CA081DF ^0xE7D9DC6
+float func_3(var uParam0) // Position - 0x18B
 {
 	if (func_8(uParam0))
 		if (func_5(uParam0))
@@ -154,7 +154,7 @@ float func_3(var uParam0) // Position - 0x18B Hash - 0x4CA081DF ^0xE7D9DC6
 	return uParam0->f_1;
 }
 
-float func_4(BOOL bParam0) // Position - 0x1C7 Hash - 0xB0FB4432 ^0x9D798691
+float func_4(BOOL bParam0) // Position - 0x1C7
 {
 	float num;
 	float num2;
@@ -180,18 +180,18 @@ float func_4(BOOL bParam0) // Position - 0x1C7 Hash - 0xB0FB4432 ^0x9D798691
 	return SYSTEM::TO_FLOAT(MISC::GET_GAME_TIMER()) / 1000f;
 }
 
-BOOL func_5(var uParam0) // Position - 0x21F Hash - 0x58F53CD ^0x58F53CD
+BOOL func_5(var uParam0) // Position - 0x21F
 {
 	return IS_BIT_SET(*uParam0, 2);
 }
 
-void func_6(int* piParam0) // Position - 0x22C Hash - 0x879BC8E8 ^0x879BC8E8
+void func_6(int* piParam0) // Position - 0x22C
 {
 	func_7(piParam0, 0f);
 	return;
 }
 
-void func_7(int* piParam0, float fParam1) // Position - 0x23B Hash - 0xED66BE55 ^0x9F6586C1
+void func_7(int* piParam0, float fParam1) // Position - 0x23B
 {
 	piParam0->f_1 = func_4(IS_BIT_SET(*piParam0, 4)) - fParam1;
 	MISC::SET_BIT(piParam0, 1);
@@ -200,12 +200,12 @@ void func_7(int* piParam0, float fParam1) // Position - 0x23B Hash - 0xED66BE55 
 	return;
 }
 
-BOOL func_8(var uParam0) // Position - 0x266 Hash - 0xA8A91C80 ^0xA8A91C80
+BOOL func_8(var uParam0) // Position - 0x266
 {
 	return IS_BIT_SET(*uParam0, 1);
 }
 
-void func_9(var uParam0) // Position - 0x273 Hash - 0x33434D8D ^0x5672A02E
+void func_9(var uParam0) // Position - 0x273
 {
 	uParam0->f_1 = 300;
 	func_6(&(uParam0->f_2));
@@ -215,14 +215,14 @@ void func_9(var uParam0) // Position - 0x273 Hash - 0x33434D8D ^0x5672A02E
 	return;
 }
 
-void func_10(var uParam0) // Position - 0x2A0 Hash - 0x339707D0 ^0x67A39BDF
+void func_10(var uParam0) // Position - 0x2A0
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SPLASH_TEXT_TRANSITION_IN");
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	return;
 }
 
-void func_11(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, BOOL bParam6) // Position - 0x2B7 Hash - 0x4FCE6CAB ^0xAF6875C9
+void func_11(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, BOOL bParam6) // Position - 0x2B7
 {
 	uParam0->f_1 = -1;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(*uParam0, "SPLASH_TEXT_LABEL");
@@ -242,14 +242,14 @@ void func_11(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	return;
 }
 
-void func_12(char* sParam0) // Position - 0x305 Hash - 0x8E2F5FE2 ^0x29D9D432
+void func_12(char* sParam0) // Position - 0x305
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	return;
 }
 
-int func_13() // Position - 0x317 Hash - 0x1B551749 ^0xDC427049
+int func_13() // Position - 0x317
 {
 	return GRAPHICS::REQUEST_SCALEFORM_MOVIE("SPLASH_TEXT");
 }

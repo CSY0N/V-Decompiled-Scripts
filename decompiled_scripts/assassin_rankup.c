@@ -44,7 +44,7 @@
 	var uLocal_42 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -78,7 +78,7 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	{
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
-			Global_114370.f_19966 = Global_114370.f_19966 + 1;
+			Global_113969.f_19966 = Global_113969.f_19966 + 1;
 			func_1();
 			SCRIPT::TERMINATE_THIS_THREAD();
 		}
@@ -89,19 +89,19 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-void func_1() // Position - 0xAD Hash - 0xF815D470 ^0x64949F15
+void func_1() // Position - 0xAD
 {
-	func_2(&(Global_114370.f_19966.f_1), 2048);
+	func_2(&(Global_113969.f_19966.f_1), 2048);
 	return;
 }
 
-void func_2(int iParam0, int iParam1) // Position - 0xC5 Hash - 0xF55E891F ^0xF55E891F
+void func_2(int iParam0, int iParam1) // Position - 0xC5
 {
 	func_3(iParam0, iParam1);
 	return;
 }
 
-void func_3(int iParam0, int iParam1) // Position - 0xD5 Hash - 0xF23F5A1A ^0xF23F5A1A
+void func_3(int iParam0, int iParam1) // Position - 0xD5
 {
 	*iParam0 = *iParam0 || iParam1;
 	return;

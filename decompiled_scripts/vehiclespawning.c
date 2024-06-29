@@ -67,7 +67,7 @@
 	var uLocal_65 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -134,7 +134,7 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-BOOL func_1() // Position - 0x121 Hash - 0xE5129D6B ^0xDFA22C22
+BOOL func_1() // Position - 0x121
 {
 	if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(inLocal_62, "garage_decor_01"))
 	{
@@ -149,7 +149,7 @@ BOOL func_1() // Position - 0x121 Hash - 0xE5129D6B ^0xDFA22C22
 	return 0;
 }
 
-BOOL func_2() // Position - 0x14B Hash - 0xB4319716 ^0xA16496A7
+BOOL func_2() // Position - 0x14B
 {
 	inLocal_62 = INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID());
 
@@ -170,7 +170,7 @@ BOOL func_2() // Position - 0x14B Hash - 0xB4319716 ^0xA16496A7
 	return 0;
 }
 
-void func_3() // Position - 0x18C Hash - 0x527671A9 ^0x527671A9
+void func_3() // Position - 0x18C
 {
 	int i;
 
@@ -183,20 +183,20 @@ void func_3() // Position - 0x18C Hash - 0x527671A9 ^0x527671A9
 	return;
 }
 
-void func_4() // Position - 0x1B1 Hash - 0xCE5FB49E ^0x214A59D5
+void func_4() // Position - 0x1B1
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 	return;
 }
 
-void func_5(int iParam0) // Position - 0x1BD Hash - 0xDCEE90FC ^0x104A7718
+void func_5(int iParam0) // Position - 0x1BD
 {
 	func_6(&uLocal_33[iParam0]);
 	NETWORK::RESERVE_NETWORK_MISSION_VEHICLES(NETWORK::GET_NUM_RESERVED_MISSION_VEHICLES(false, 0) - 1);
 	return;
 }
 
-void func_6(var uParam0) // Position - 0x1DB Hash - 0x7623605C ^0x6B47B1A0
+void func_6(var uParam0) // Position - 0x1DB
 {
 	Entity entity;
 
@@ -212,16 +212,16 @@ void func_6(var uParam0) // Position - 0x1DB Hash - 0x7623605C ^0x6B47B1A0
 	return;
 }
 
-int _SHOULD_NETWORK_SCRIPT_TERMINATE() // Position - 0x214 Hash - 0x52E21E9B ^0xD0F85E96
+int _SHOULD_NETWORK_SCRIPT_TERMINATE() // Position - 0x214
 {
-	if (Global_1575052 == false)
+	if (Global_1575055 == false)
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			return 1;
 
 	if (func_14())
 		return 1;
 
-	if (Global_2698534)
+	if (Global_2698757)
 		return 1;
 
 	if (func_13())
@@ -244,7 +244,7 @@ int _SHOULD_NETWORK_SCRIPT_TERMINATE() // Position - 0x214 Hash - 0x52E21E9B ^0x
 	return 0;
 }
 
-Hash _GET_CURRENT_SESSION_TYPE_SCRIPT_HASH() // Position - 0x298 Hash - 0x90B5165C ^0xB8DD5DC8
+Hash _GET_CURRENT_SESSION_TYPE_SCRIPT_HASH() // Position - 0x298
 {
 	switch (func_10())
 	{
@@ -258,9 +258,9 @@ Hash _GET_CURRENT_SESSION_TYPE_SCRIPT_HASH() // Position - 0x298 Hash - 0x90B516
 	return 0;
 }
 
-Hash func_9() // Position - 0x2CB Hash - 0x61402777 ^0xB9FAC976
+Hash func_9() // Position - 0x2CB
 {
-	switch (Global_2698640)
+	switch (Global_2698864)
 	{
 		case 0:
 			return joaat("freemode");
@@ -272,17 +272,17 @@ Hash func_9() // Position - 0x2CB Hash - 0x61402777 ^0xB9FAC976
 	return joaat("freemode");
 }
 
-int func_10() // Position - 0x2EF Hash - 0x21D64237 ^0x21D64237
+int func_10() // Position - 0x2EF
 {
-	return Global_32828;
+	return Global_32948;
 }
 
-BOOL func_11() // Position - 0x2FA Hash - 0x974E48B4 ^0x974E48B4
+BOOL func_11() // Position - 0x2FA
 {
-	return Global_2684312.f_698;
+	return Global_2684504.f_700;
 }
 
-BOOL _DOES_EVENT_OF_TYPE_EXIST(int iParam0) // Position - 0x309 Hash - 0xA28ADBB4 ^0x6EB81E64
+BOOL _DOES_EVENT_OF_TYPE_EXIST(int iParam0) // Position - 0x309
 {
 	if (SCRIPT::GET_EVENT_EXISTS(SCRIPT_EVENT_QUEUE_NETWORK, iParam0))
 		return true;
@@ -290,23 +290,23 @@ BOOL _DOES_EVENT_OF_TYPE_EXIST(int iParam0) // Position - 0x309 Hash - 0xA28ADBB
 	return false;
 }
 
-BOOL func_13() // Position - 0x320 Hash - 0x47FF56D2 ^0x47FF56D2
+BOOL func_13() // Position - 0x320
 {
-	return Global_2695951;
+	return Global_2696172;
 }
 
-BOOL func_14() // Position - 0x32C Hash - 0x974E48B4 ^0x974E48B4
+BOOL func_14() // Position - 0x32C
 {
-	return Global_2684312.f_693;
+	return Global_2684504.f_695;
 }
 
-void func_15() // Position - 0x33B Hash - 0x66E327B2 ^0x39BE3C9E
+void func_15() // Position - 0x33B
 {
 	SYSTEM::WAIT(0);
 	return;
 }
 
-void func_16() // Position - 0x348 Hash - 0xD998FA2 ^0x65691374
+void func_16() // Position - 0x348
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 	_NETWORK_ENSURE_SCRIPT_IS_NETWORKED(0, -1, false);
@@ -323,7 +323,7 @@ void func_16() // Position - 0x348 Hash - 0xD998FA2 ^0x65691374
 	return;
 }
 
-BOOL _NETWORK_WAIT_FOR_HOST_BROADCAST_DATA() // Position - 0x38C Hash - 0xBB119947 ^0x279B9D24
+BOOL _NETWORK_WAIT_FOR_HOST_BROADCAST_DATA() // Position - 0x38C
 {
 	int num;
 
@@ -354,7 +354,7 @@ BOOL _NETWORK_WAIT_FOR_HOST_BROADCAST_DATA() // Position - 0x38C Hash - 0xBB1199
 	return false;
 }
 
-int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTerminate) // Position - 0x3E5 Hash - 0x75751681 ^0x9140C9A0
+int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTerminate) // Position - 0x3E5
 {
 	int i;
 
@@ -401,7 +401,7 @@ int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTermin
 	}
 
 	if (iParam1 > -1)
-		Global_1574666 = i;
+		Global_1574667 = i;
 
 	if (iParam0 == 0)
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -418,9 +418,9 @@ int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTermin
 	return 1;
 }
 
-BOOL func_19(BOOL bParam0) // Position - 0x4FB Hash - 0x1CCCE169 ^0x1CCCE169
+BOOL func_19(BOOL bParam0) // Position - 0x4FB
 {
 	bParam0;
-	return Global_1575052;
+	return Global_1575055;
 }
 

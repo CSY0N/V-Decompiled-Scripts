@@ -65,7 +65,7 @@
 	var uLocal_63 = 0;
 	float fLocal_64 = 0f;
 	var uLocal_65 = 0;
-	var uLocal_66 = 0;
+	float fLocal_66 = 0f;
 	var uLocal_67 = 0;
 	var uLocal_68 = 0;
 	var uLocal_69 = 0;
@@ -92,9 +92,9 @@
 	var uLocal_90 = 0;
 	var uLocal_91 = 0;
 	var uLocal_92 = 0;
-	var uLocal_93 = -1;
+	var uLocal_93 = 0;
 	var uLocal_94 = 0;
-	var uLocal_95 = 0;
+	var uLocal_95 = -1;
 	var uLocal_96 = 0;
 	var uLocal_97 = 0;
 	var uLocal_98 = 0;
@@ -116,9 +116,11 @@
 	var uLocal_114 = 0;
 	var uLocal_115 = 0;
 	var uLocal_116 = 0;
+	var uLocal_117 = 0;
+	var uLocal_118 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -145,6 +147,7 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	iLocal_39 = 49;
 	iLocal_40 = 64;
 	fLocal_64 = (0.05f + 0.275f) - 0.01f;
+	fLocal_66 = 0f;
 	func_2();
 
 	while (true)
@@ -156,19 +159,19 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-void func_1() // Position - 0x98 Hash - 0xF3B2B67E ^0xF3B2B67E
+void func_1() // Position - 0x9B
 {
 	return;
 }
 
-void func_2() // Position - 0xA0 Hash - 0x2198C48A ^0x502FD6
+void func_2() // Position - 0xA3
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 	_NETWORK_ENSURE_SCRIPT_IS_NETWORKED(0, -1, false);
 	return;
 }
 
-int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTerminate) // Position - 0xB8 Hash - 0x75751681 ^0x9140C9A0
+int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTerminate) // Position - 0xBB
 {
 	int i;
 
@@ -215,7 +218,7 @@ int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTermin
 	}
 
 	if (iParam1 > -1)
-		Global_1574666 = i;
+		Global_1574667 = i;
 
 	if (iParam0 == 0)
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -232,7 +235,7 @@ int _NETWORK_ENSURE_SCRIPT_IS_NETWORKED(int iParam0, int iParam1, BOOL bNoTermin
 	return 1;
 }
 
-BOOL _DOES_EVENT_OF_TYPE_EXIST(int iParam0) // Position - 0x1CE Hash - 0xA28ADBB4 ^0x6EB81E64
+BOOL _DOES_EVENT_OF_TYPE_EXIST(int iParam0) // Position - 0x1D1
 {
 	if (SCRIPT::GET_EVENT_EXISTS(SCRIPT_EVENT_QUEUE_NETWORK, iParam0))
 		return true;
@@ -240,18 +243,18 @@ BOOL _DOES_EVENT_OF_TYPE_EXIST(int iParam0) // Position - 0x1CE Hash - 0xA28ADBB
 	return false;
 }
 
-BOOL func_5() // Position - 0x1E5 Hash - 0x974E48B4 ^0x974E48B4
+BOOL func_5() // Position - 0x1E8
 {
-	return Global_2684312.f_693;
+	return Global_2684504.f_695;
 }
 
-BOOL func_6(BOOL bParam0) // Position - 0x1F4 Hash - 0x1CCCE169 ^0x1CCCE169
+BOOL func_6(BOOL bParam0) // Position - 0x1F7
 {
 	bParam0;
-	return Global_1575052;
+	return Global_1575055;
 }
 
-void func_7() // Position - 0x205 Hash - 0xCE5FB49E ^0x214A59D5
+void func_7() // Position - 0x208
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 	return;

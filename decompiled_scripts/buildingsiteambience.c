@@ -27,7 +27,7 @@
 	var uLocal_25 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -74,15 +74,15 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-BOOL func_1(int iParam0) // Position - 0xB6 Hash - 0xB6246282 ^0x2350A449
+BOOL func_1(int iParam0) // Position - 0xB6
 {
 	if (iParam0 == 146 || iParam0 == -1)
 		return false;
 
-	return Global_114370.f_9088.f_99.f_58[iParam0];
+	return Global_113969.f_9088.f_99.f_58[iParam0];
 }
 
-int func_2(int iParam0) // Position - 0xE3 Hash - 0xFCBFD2CC ^0x1DBFD43E
+int func_2(int iParam0) // Position - 0xE3
 {
 	int num;
 	int offset;
@@ -98,14 +98,14 @@ int func_2(int iParam0) // Position - 0xE3 Hash - 0xFCBFD2CC ^0x1DBFD43E
 		offset = iParam0 - 32;
 	}
 
-	if (IS_BIT_SET(Global_114370.f_9088.f_99.f_219[num], offset))
+	if (IS_BIT_SET(Global_113969.f_9088.f_99.f_219[num], offset))
 		return 0;
 
-	MISC::SET_BIT(&Global_114370.f_9088.f_99.f_219[num], offset);
+	MISC::SET_BIT(&Global_113969.f_9088.f_99.f_219[num], offset);
 	return 1;
 }
 
-void func_3() // Position - 0x13A Hash - 0xC9992D9D ^0x61BC5647
+void func_3() // Position - 0x13A
 {
 	AUDIO::STOP_STREAM();
 	AUDIO::UNREGISTER_SCRIPT_WITH_AUDIO();
@@ -113,7 +113,7 @@ void func_3() // Position - 0x13A Hash - 0xC9992D9D ^0x61BC5647
 	return;
 }
 
-int func_4(int iParam0) // Position - 0x14E Hash - 0xFCBFD2CC ^0x1DBFD43E
+int func_4(int iParam0) // Position - 0x14E
 {
 	int num;
 	int offset;
@@ -129,9 +129,9 @@ int func_4(int iParam0) // Position - 0x14E Hash - 0xFCBFD2CC ^0x1DBFD43E
 		offset = iParam0 - 32;
 	}
 
-	if (IS_BIT_SET(Global_114370.f_9088.f_99.f_219[num], offset))
+	if (IS_BIT_SET(Global_113969.f_9088.f_99.f_219[num], offset))
 	{
-		MISC::CLEAR_BIT(&Global_114370.f_9088.f_99.f_219[num], offset);
+		MISC::CLEAR_BIT(&Global_113969.f_9088.f_99.f_219[num], offset);
 		return 1;
 	}
 

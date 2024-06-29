@@ -46,7 +46,7 @@
 	float fLocal_44 = 0f;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -113,22 +113,22 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-void func_1(int iParam0) // Position - 0x13F Hash - 0x16DDA0D8 ^0x7EBCF24C
+void func_1(int iParam0) // Position - 0x13F
 {
-	if (Global_20792 == false)
+	if (Global_20909 == false)
 	{
 		if (PAD::IS_CONTROL_PRESSED(FRONTEND_CONTROL, INPUT_FRONTEND_LEFT) || PAD::IS_CONTROL_PRESSED(FRONTEND_CONTROL, INPUT_FRONTEND_RIGHT))
 		{
-			Global_20792 = true;
+			Global_20909 = true;
 			SYSTEM::SETTIMERA(0);
 		}
 	}
 	else if (SYSTEM::TIMERA() > 50)
 	{
-		Global_20792 = false;
+		Global_20909 = false;
 	}
 
-	if (Global_20792 == false)
+	if (Global_20909 == false)
 	{
 		if (PAD::IS_CONTROL_JUST_PRESSED(FRONTEND_CONTROL, INPUT_FRONTEND_LEFT))
 		{
@@ -350,7 +350,7 @@ void func_1(int iParam0) // Position - 0x13F Hash - 0x16DDA0D8 ^0x7EBCF24C
 	return;
 }
 
-void func_2() // Position - 0x43D Hash - 0x2B15AE26 ^0xD3E882CC
+void func_2() // Position - 0x43D
 {
 	if (CAM::DOES_CAM_EXIST(caLocal_17))
 		CAM::DESTROY_CAM(caLocal_17, false);
@@ -364,111 +364,111 @@ void func_2() // Position - 0x43D Hash - 0x2B15AE26 ^0xD3E882CC
 	return;
 }
 
-void func_3(BOOL bParam0) // Position - 0x47A Hash - 0x5FE88D2A ^0xA22C291D
+void func_3(BOOL bParam0) // Position - 0x47A
 {
 	if (bParam0)
 	{
 		func_10();
 	
-		if (Global_20813.f_1 == 10 || Global_20813.f_1 == 9)
-			MISC::SET_BIT(&Global_8684, 16);
+		if (Global_20930.f_1 == 10 || Global_20930.f_1 == 9)
+			MISC::SET_BIT(&Global_8801, 16);
 	
-		Global_20813.f_1 = 1;
+		Global_20930.f_1 = 1;
 	
 		if (func_9(0))
 			func_4(0);
 	}
-	else if (Global_20813.f_1 == 1)
+	else if (Global_20930.f_1 == 1)
 	{
-		if (!(Global_20813.f_1 == 0))
-			Global_20813.f_1 = 3;
+		if (!(Global_20930.f_1 == 0))
+			Global_20930.f_1 = 3;
 	}
 
 	return;
 }
 
-void func_4(int iParam0) // Position - 0x4DD Hash - 0x4066FEF5 ^0x9787FBDA
+void func_4(int iParam0) // Position - 0x4DD
 {
 	if (func_8())
 		return;
 
-	if (Global_21025)
+	if (Global_21145)
 		if (func_7())
 			func_6(true, true);
 		else
 			func_6(false, false);
 
-	if (Global_20813.f_1 == 10 || Global_20813.f_1 == 9)
-		MISC::SET_BIT(&Global_8684, 16);
+	if (Global_20930.f_1 == 10 || Global_20930.f_1 == 9)
+		MISC::SET_BIT(&Global_8801, 16);
 
 	if (AUDIO::IS_MOBILE_PHONE_CALL_ONGOING())
 		AUDIO::STOP_SCRIPTED_CONVERSATION(false);
 
-	Global_22166 = 5;
+	Global_22286 = 5;
 
 	if (iParam0 == 1)
-		MISC::SET_BIT(&Global_8683, 30);
+		MISC::SET_BIT(&Global_8800, 30);
 	else
-		MISC::CLEAR_BIT(&Global_8683, 30);
+		MISC::CLEAR_BIT(&Global_8800, 30);
 
 	if (!func_5())
-		Global_20813.f_1 = 3;
+		Global_20930.f_1 = 3;
 
 	return;
 }
 
-BOOL func_5() // Position - 0x567 Hash - 0xD140D54A ^0xE638D98F
+BOOL func_5() // Position - 0x567
 {
-	if (Global_20813.f_1 == 1 || Global_20813.f_1 == 0)
+	if (Global_20930.f_1 == 1 || Global_20930.f_1 == 0)
 		return true;
 
 	return false;
 }
 
-void func_6(BOOL bParam0, BOOL bParam1) // Position - 0x58E Hash - 0xF40FC178 ^0xA6F60F17
+void func_6(BOOL bParam0, BOOL bParam1) // Position - 0x58E
 {
 	if (bParam0)
 	{
 		if (func_9(0))
 		{
-			Global_21025 = true;
+			Global_21145 = true;
 		
 			if (bParam1)
-				MOBILE::GET_MOBILE_PHONE_POSITION(&Global_20750);
+				MOBILE::GET_MOBILE_PHONE_POSITION(&Global_20867);
 		
-			Global_20741 = { Global_20759[Global_20758 /*3*/] };
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20741);
+			Global_20858 = { Global_20876[Global_20875 /*3*/] };
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20858);
 		}
 	}
-	else if (Global_21025 == true)
+	else if (Global_21145 == true)
 	{
-		Global_21025 = false;
-		Global_20741 = { Global_20766[Global_20758 /*3*/] };
+		Global_21145 = false;
+		Global_20858 = { Global_20883[Global_20875 /*3*/] };
 	
 		if (bParam1)
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20750);
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20867);
 		else
-			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20741);
+			MOBILE::SET_MOBILE_PHONE_POSITION(Global_20858);
 	}
 
 	return;
 }
 
-BOOL func_7() // Position - 0x602 Hash - 0x8DF3D75D ^0x8DF3D75D
+BOOL func_7() // Position - 0x602
 {
-	return IS_BIT_SET(Global_1956030, 5);
+	return IS_BIT_SET(Global_1956920, 5);
 }
 
-BOOL func_8() // Position - 0x610 Hash - 0xC41437CB ^0xC41437CB
+BOOL func_8() // Position - 0x610
 {
-	return IS_BIT_SET(Global_1956030, 19);
+	return IS_BIT_SET(Global_1956920, 19);
 }
 
-BOOL func_9(int iParam0) // Position - 0x61F Hash - 0xE8921B44 ^0x4F063755
+BOOL func_9(int iParam0) // Position - 0x61F
 {
 	if (iParam0 == 1)
-		if (Global_20813.f_1 > 3)
-			if (IS_BIT_SET(Global_8683, 14))
+		if (Global_20930.f_1 > 3)
+			if (IS_BIT_SET(Global_8800, 14))
 				return true;
 			else
 				return false;
@@ -478,18 +478,18 @@ BOOL func_9(int iParam0) // Position - 0x61F Hash - 0xE8921B44 ^0x4F063755
 	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) > 0)
 		return true;
 
-	if (Global_20813.f_1 > 3)
+	if (Global_20930.f_1 > 3)
 		return true;
 
 	return false;
 }
 
-void func_10() // Position - 0x676 Hash - 0xF8FE2348 ^0xA77911B2
+void func_10() // Position - 0x676
 {
-	if (Global_20813.f_1 == 9 || Global_20813.f_1 == 10)
+	if (Global_20930.f_1 == 9 || Global_20930.f_1 == 10)
 	{
-		Global_22219 = false;
-		Global_22215 = 1;
+		Global_22339 = false;
+		Global_22335 = 1;
 	}
 
 	return;

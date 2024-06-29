@@ -64,7 +64,7 @@
 	var uLocal_62 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -106,13 +106,13 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-void func_1() // Position - 0xA2 Hash - 0xD8C6DE12 ^0xD8C6DE12
+void func_1() // Position - 0xA2
 {
 	func_2();
 	return;
 }
 
-void func_2() // Position - 0xAE Hash - 0x9849FBAF ^0xF10EECE0
+void func_2() // Position - 0xAE
 {
 	int i;
 	eEventType eventAtIndex;
@@ -140,48 +140,48 @@ void func_2() // Position - 0xAE Hash - 0x9849FBAF ^0xF10EECE0
 	return;
 }
 
-void func_3(var uParam0) // Position - 0x116 Hash - 0x9B4DC1AA ^0xCD3017D6
+void func_3(var uParam0) // Position - 0x116
 {
 	eEventType type;
 
 	type = *uParam0;
 
-	if (_IS_FMMC_ACTIVE() && func_4(type) && type != EVENT_ERRORS_UNKNOWN_ERROR && NETWORK::NETWORK_CAN_BAIL())
+	if (_IS_FMMC_ACTIVE() && func_4(type) && type != EVENT_ERRORS_ARRAY_OVERFLOW && NETWORK::NETWORK_CAN_BAIL())
 		NETWORK::NETWORK_BAIL(0, 1, 0);
 
 	return;
 }
 
-BOOL func_4(eEventType eetParam0) // Position - 0x14F Hash - 0x22A853F3 ^0x22A853F3
+BOOL func_4(eEventType eetParam0) // Position - 0x14F
 {
-	return eetParam0 == EVENT_ERRORS_ARRAY_OVERFLOW || eetParam0 == EVENT_ERRORS_INSTRUCTION_LIMIT || eetParam0 == EVENT_ERRORS_STACK_OVERFLOW || eetParam0 == EVENT_ERRORS_UNKNOWN_ERROR;
+	return eetParam0 == EVENT_ERRORS_INSTRUCTION_LIMIT || eetParam0 == EVENT_ERRORS_STACK_OVERFLOW || eetParam0 == EVENT_0x063E563B || eetParam0 == EVENT_ERRORS_ARRAY_OVERFLOW;
 }
 
-BOOL _IS_FMMC_ACTIVE() // Position - 0x17D Hash - 0x9A79549B ^0x5E09568E
+BOOL _IS_FMMC_ACTIVE() // Position - 0x17D
 {
-	return Global_1845263[PLAYER::PLAYER_ID() /*877*/].f_192 != 0;
+	return Global_1845281[PLAYER::PLAYER_ID() /*883*/].f_193 != 0;
 }
 
-int func_6(var uParam0) // Position - 0x194 Hash - 0xF9C22FE1 ^0x58D68A6C
+int func_6(var uParam0) // Position - 0x194
 {
-	if (Global_33107.f_61 < 20)
+	if (Global_33227.f_61 < 20)
 	{
-		Global_33107[Global_33107.f_61 /*3*/] = { *uParam0 };
-		Global_33107.f_61 = Global_33107.f_61 + 1;
+		Global_33227[Global_33227.f_61 /*3*/] = { *uParam0 };
+		Global_33227.f_61 = Global_33227.f_61 + 1;
 		return 1;
 	}
 
 	return 0;
 }
 
-BOOL func_7(var uParam0, var uParam1) // Position - 0x1C7 Hash - 0x8236090F ^0x52F4D4BC
+BOOL func_7(var uParam0, var uParam1) // Position - 0x1C7
 {
 	*uParam1 = 0;
 	*uParam1 = 0;
 
-	while (*uParam1 < Global_33107.f_61)
+	while (*uParam1 < Global_33227.f_61)
 	{
-		if (Global_33107[*uParam1 /*3*/] == *uParam0 && Global_33107[*uParam1 /*3*/].f_2 == uParam0->f_2)
+		if (Global_33227[*uParam1 /*3*/] == *uParam0 && Global_33227[*uParam1 /*3*/].f_2 == uParam0->f_2)
 			return true;
 	
 		*uParam1 = *uParam1 + 1;
@@ -190,18 +190,18 @@ BOOL func_7(var uParam0, var uParam1) // Position - 0x1C7 Hash - 0x8236090F ^0x5
 	return false;
 }
 
-void func_8(eEventGroup eegParam0, int iParam1, eEventType eetParam2, var uParam3) // Position - 0x215 Hash - 0x12284894 ^0x3A4A2D8A
+void func_8(eEventGroup eegParam0, int iParam1, eEventType eetParam2, var uParam3) // Position - 0x215
 {
 	var eventData;
 
-	if (eetParam2 == EVENT_ERRORS_UNKNOWN_ERROR || eetParam2 == EVENT_ERRORS_ARRAY_OVERFLOW || eetParam2 == EVENT_ERRORS_INSTRUCTION_LIMIT || eetParam2 == EVENT_ERRORS_STACK_OVERFLOW)
+	if (eetParam2 == EVENT_ERRORS_ARRAY_OVERFLOW || eetParam2 == EVENT_ERRORS_INSTRUCTION_LIMIT || eetParam2 == EVENT_ERRORS_STACK_OVERFLOW || eetParam2 == EVENT_0x063E563B)
 		if (SCRIPT::GET_EVENT_DATA(eegParam0, iParam1, &eventData, 1))
 			uParam3->f_2 = eventData;
 
 	return;
 }
 
-void func_9(var uParam0) // Position - 0x25A Hash - 0x69039F36 ^0x23DFCE77
+void func_9(var uParam0) // Position - 0x25A
 {
 	*uParam0 = -1;
 	uParam0->f_1 = -1;
@@ -209,17 +209,17 @@ void func_9(var uParam0) // Position - 0x25A Hash - 0x69039F36 ^0x23DFCE77
 	return;
 }
 
-BOOL func_10(eEventType eetParam0) // Position - 0x270 Hash - 0x3E978ED3 ^0x3E978ED3
+BOOL func_10(eEventType eetParam0) // Position - 0x270
 {
 	return func_4(eetParam0);
 }
 
-BOOL func_11() // Position - 0x27E Hash - 0x98B7EFDD ^0x98B7EFDD
+BOOL func_11() // Position - 0x27E
 {
 	return false;
 }
 
-void func_12() // Position - 0x287 Hash - 0xCE5FB49E ^0x52B72321
+void func_12() // Position - 0x287
 {
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	return;

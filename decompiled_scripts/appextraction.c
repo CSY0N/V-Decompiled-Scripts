@@ -20,7 +20,7 @@
 	int iLocal_18 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -48,9 +48,9 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	{
 		SYSTEM::WAIT(0);
 	
-		if (Global_20813.f_1 != 9)
+		if (Global_20930.f_1 != 9)
 		{
-			switch (Global_20813.f_1)
+			switch (Global_20930.f_1)
 			{
 				case 7:
 					if (iLocal_18 == 1 && SYSTEM::TIMERA() > 1500)
@@ -61,13 +61,13 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 					break;
 			
 				case 8:
-					if (func_5(FRONTEND_CONTROL, Global_20781, 0))
+					if (func_5(FRONTEND_CONTROL, Global_20898, 0))
 					{
 						func_4();
-						Global_20791 = true;
+						Global_20908 = true;
 					
-						if (Global_20813.f_1 > 3)
-							Global_20813.f_1 = 7;
+						if (Global_20930.f_1 > 3)
+							Global_20930.f_1 = 7;
 					}
 					break;
 			
@@ -80,7 +80,7 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 		}
 		else
 		{
-			Global_20815 = 6;
+			Global_20932 = 6;
 			func_2();
 		}
 	
@@ -91,43 +91,43 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-BOOL func_1() // Position - 0xE5 Hash - 0x57EB5377 ^0xDC0824ED
+BOOL func_1() // Position - 0xE5
 {
-	if (Global_20813.f_1 == 1 || Global_20813.f_1 == 3 || Global_20813.f_1 == 0 || Global_20757 == 1)
+	if (Global_20930.f_1 == 1 || Global_20930.f_1 == 3 || Global_20930.f_1 == 0 || Global_20874 == 1)
 	{
-		Global_20800 = 1;
+		Global_20917 = 1;
 		return true;
 	}
 
 	return false;
 }
 
-void func_2() // Position - 0x128 Hash - 0xCE5FB49E ^0x214A59D5
+void func_2() // Position - 0x128
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 	return;
 }
 
-BOOL func_3() // Position - 0x134 Hash - 0x1F39C732 ^0x92A1ED04
+BOOL func_3() // Position - 0x134
 {
-	if (Global_9289 == 1 || Global_20813.f_1 < 7)
+	if (Global_9406 == 1 || Global_20930.f_1 < 7)
 	{
-		Global_20800 = 1;
+		Global_20917 = 1;
 		return true;
 	}
 
 	return false;
 }
 
-void func_4() // Position - 0x15D Hash - 0x50A0E425 ^0xF7057894
+void func_4() // Position - 0x15D
 {
 	if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
-		AUDIO::PLAY_SOUND_FRONTEND(-1, "Menu_Back", &Global_20802, true);
+		AUDIO::PLAY_SOUND_FRONTEND(-1, "Menu_Back", &Global_20919, true);
 
 	return;
 }
 
-BOOL func_5(eControlType ectParam0, eControlAction ecaParam1, int iParam2) // Position - 0x17D Hash - 0xBB00BE4E ^0xA27687FD
+BOOL func_5(eControlType ectParam0, eControlAction ecaParam1, int iParam2) // Position - 0x17D
 {
 	if (PAD::IS_CONTROL_JUST_PRESSED(ectParam0, ecaParam1) || iParam2 == 1 && PAD::IS_DISABLED_CONTROL_JUST_PRESSED(ectParam0, ecaParam1))
 	{
@@ -144,69 +144,69 @@ BOOL func_5(eControlType ectParam0, eControlAction ecaParam1, int iParam2) // Po
 	return false;
 }
 
-void func_6() // Position - 0x1EF Hash - 0xD8C6DE12 ^0xD8C6DE12
+void func_6() // Position - 0x1EF
 {
 	func_7();
 	return;
 }
 
-void func_7() // Position - 0x1FB Hash - 0x6A52BF3 ^0xDDFA3A2D
+void func_7() // Position - 0x1FB
 {
-	func_9(Global_20794, "SET_DATA_SLOT_EMPTY", 24f, -1082130432, -1082130432, -1082130432, -1082130432);
-	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20794, "SET_DATA_SLOT");
+	func_9(Global_20911, "SET_DATA_SLOT_EMPTY", 24f, -1082130432, -1082130432, -1082130432, -1082130432);
+	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20911, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(24);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
 
-	if (IS_BIT_SET(Global_4542983, 23))
+	if (IS_BIT_SET(Global_4543084, 23))
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
 		func_8("CELL_EXTBYOU" /*You*/);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542984);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543264));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542985);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543264.f_1));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542986);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543264.f_2));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543085);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543365));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543086);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543365.f_1));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543087);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543365.f_2));
 		func_8("CELL_BODYG" /*Guard*/);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542987);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543267));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542988);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543267.f_1));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542989);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543267.f_2));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543088);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543368));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543089);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543368.f_1));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543090);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543368.f_2));
 	}
 	else
 	{
 		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
 		func_8("CELL_EXTBYOU" /*You*/);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542987);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543267));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542988);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543267.f_1));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542989);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543267.f_2));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543088);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543368));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543089);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543368.f_1));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543090);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543368.f_2));
 		func_8("CELL_EXTBTARG" /*Target*/);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542984);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543264));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542985);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543264.f_1));
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4542986);
-		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543264.f_2));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543085);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543365));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543086);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543365.f_1));
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_4543087);
+		GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::FLOOR(Global_4543365.f_2));
 	}
 
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-	func_9(Global_20794, "DISPLAY_VIEW", 24f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
+	func_9(Global_20911, "DISPLAY_VIEW", 24f, SYSTEM::TO_FLOAT(1), -1082130432, -1082130432, -1082130432);
 	return;
 }
 
-void func_8(const char* sParam0) // Position - 0x396 Hash - 0x8E2F5FE2 ^0x29D9D432
+void func_8(const char* sParam0) // Position - 0x396
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	return;
 }
 
-void func_9(int iParam0, char* sParam1, float fParam2, int iParam3, int iParam4, int iParam5, int iParam6) // Position - 0x3A8 Hash - 0x5F496D0E ^0x86F8205
+void func_9(int iParam0, char* sParam1, float fParam2, int iParam3, int iParam4, int iParam5, int iParam6) // Position - 0x3A8
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam2));
@@ -227,31 +227,31 @@ void func_9(int iParam0, char* sParam1, float fParam2, int iParam3, int iParam4,
 	return;
 }
 
-void func_10() // Position - 0x40B Hash - 0xD8C6DE12 ^0xD8C6DE12
+void func_10() // Position - 0x40B
 {
 	func_7();
 	return;
 }
 
-void func_11() // Position - 0x417 Hash - 0xBB13B079 ^0xBB13B079
+void func_11() // Position - 0x417
 {
-	if (Global_20801)
+	if (Global_20918)
 	{
-		func_12(Global_20794, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, "CELL_201" /*CALL*/, 0, 0, 0, 0);
-		func_12(Global_20794, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213" /*NO*/, 0, 0, 0, 0);
+		func_12(Global_20911, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, "CELL_201" /*CALL*/, 0, 0, 0, 0);
+		func_12(Global_20911, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, "CELL_213" /*NO*/, 0, 0, 0, 0);
 	}
 	else
 	{
-		func_12(Global_20794, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, 0, 0, 0, 0, 0);
-		func_12(Global_20794, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, 0, 0, 0, 0, 0);
+		func_12(Global_20911, "SET_SOFT_KEYS", 2f, 0f, 13f, -1f, -1f, 0, 0, 0, 0, 0);
+		func_12(Global_20911, "SET_SOFT_KEYS", 3f, 1f, 14f, -1f, -1f, 0, 0, 0, 0, 0);
 	}
 
-	func_12(Global_20794, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
-	MISC::CLEAR_BIT(&Global_8683, 17);
+	func_12(Global_20911, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
+	MISC::CLEAR_BIT(&Global_8800, 17);
 	return;
 }
 
-void func_12(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, const char* sParam8, const char* sParam9, const char* sParam10, const char* sParam11) // Position - 0x4A9 Hash - 0x39E054FF ^0x41D02682
+void func_12(int iParam0, char* sParam1, float fParam2, float fParam3, float fParam4, float fParam5, float fParam6, char* sParam7, const char* sParam8, const char* sParam9, const char* sParam10, const char* sParam11) // Position - 0x4A9
 {
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iParam0, sParam1);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(SYSTEM::ROUND(fParam2));

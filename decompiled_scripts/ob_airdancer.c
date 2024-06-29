@@ -5,7 +5,7 @@
 	Object obScriptParam_0 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5C31D154 ^0x47113F55
+void main() // Position - 0x0
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
 		func_1();
@@ -57,20 +57,20 @@ void main() // Position - 0x0 Hash - 0x5C31D154 ^0x47113F55
 	return;
 }
 
-void func_1() // Position - 0x9F Hash - 0xE46BEEFC ^0xEFE76334
+void func_1() // Position - 0x9F
 {
 	func_2("ob_airdancer Terminated >>>>>>>>>>>>>>>>>\\n");
 	SCRIPT::TERMINATE_THIS_THREAD();
 	return;
 }
 
-void func_2(char* sParam0) // Position - 0xB2 Hash - 0x646928F0 ^0x646928F0
+void func_2(char* sParam0) // Position - 0xB2
 {
 	func_3(sParam0);
 	return;
 }
 
-void func_3(char* sParam0) // Position - 0xC0 Hash - 0xF54A2398 ^0xC5887C42
+void func_3(char* sParam0) // Position - 0xC0
 {
 	MISC::ARE_STRINGS_EQUAL(sParam0, sParam0);
 	return;

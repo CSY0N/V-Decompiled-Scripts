@@ -22,7 +22,7 @@
 	BOOL bLocal_20 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -95,56 +95,56 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 		func_1();
 	}
 
-	Global_79519.f_1 = 0;
-	MISC::SET_BIT(&(Global_114370.f_10019.f_25), 0);
+	Global_79660.f_1 = 0;
+	MISC::SET_BIT(&(Global_113969.f_10019.f_25), 0);
 	func_6();
 	return;
 }
 
-int func_1() // Position - 0x17D Hash - 0x9482CBBF ^0x8B17A994
+int func_1() // Position - 0x17D
 {
 	if (_IS_MISSION_REPEAT_ACTIVE(false))
 		return 0;
 
-	if (Global_101431.f_8)
-		if (Global_101431.f_10 > 0)
+	if (Global_101572.f_8)
+		if (Global_101572.f_10 > 0)
 			return 0;
-	else if (Global_101431.f_10 > 1)
+	else if (Global_101572.f_10 > 1)
 		return 0;
 
-	Global_101431.f_10 = Global_101431.f_10 + 1;
+	Global_101572.f_10 = Global_101572.f_10 + 1;
 	return 1;
 }
 
-BOOL _IS_MISSION_REPEAT_ACTIVE(BOOL bExcludeBenchmark) // Position - 0x1C8 Hash - 0x15889021 ^0xE7262364
+BOOL _IS_MISSION_REPEAT_ACTIVE(BOOL bExcludeBenchmark) // Position - 0x1C8
 {
 	if (!bExcludeBenchmark && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("benchmark")) > 0)
 		return true;
 
-	return IS_BIT_SET(Global_79497, 0);
+	return IS_BIT_SET(Global_79638, 0);
 }
 
-void func_3(int iParam0, int iParam1) // Position - 0x1F0 Hash - 0x277DE552 ^0x65283938
+void func_3(int iParam0, int iParam1) // Position - 0x1F0
 {
-	Global_101431.f_7 = iParam0;
-	Global_101431.f_8 = iParam1;
+	Global_101572.f_7 = iParam0;
+	Global_101572.f_8 = iParam1;
 	return;
 }
 
-void func_4(const char* sParam0) // Position - 0x208 Hash - 0x690E6520 ^0x509C71F3
+void func_4(const char* sParam0) // Position - 0x208
 {
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_PLAYER_NAME_STRING(sParam0);
 	return;
 }
 
-void func_5(char* sParam0) // Position - 0x216 Hash - 0x8E2F5FE2 ^0x29D9D432
+void func_5(char* sParam0) // Position - 0x216
 {
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(sParam0);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	return;
 }
 
-void func_6() // Position - 0x228 Hash - 0xDDB78FCB ^0xD0305689
+void func_6() // Position - 0x228
 {
 	if (iLocal_18 != 0)
 		GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_18);

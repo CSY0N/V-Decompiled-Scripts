@@ -32,7 +32,7 @@
 	int iLocal_30 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -124,7 +124,7 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	return;
 }
 
-BOOL func_1(var uParam0, int iParam1) // Position - 0x18E Hash - 0x531C3980 ^0xF5F1F9EF
+BOOL func_1(var uParam0, int iParam1) // Position - 0x18E
 {
 	int gameTimer;
 
@@ -136,13 +136,13 @@ BOOL func_1(var uParam0, int iParam1) // Position - 0x18E Hash - 0x531C3980 ^0xF
 	return false;
 }
 
-void func_2() // Position - 0x1AC Hash - 0xCE5FB49E ^0x214A59D5
+void func_2() // Position - 0x1AC
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 	return;
 }
 
-int func_3(int iParam0) // Position - 0x1B8 Hash - 0xFCBFD2CC ^0x1DBFD43E
+int func_3(int iParam0) // Position - 0x1B8
 {
 	int num;
 	int offset;
@@ -158,16 +158,16 @@ int func_3(int iParam0) // Position - 0x1B8 Hash - 0xFCBFD2CC ^0x1DBFD43E
 		offset = iParam0 - 32;
 	}
 
-	if (IS_BIT_SET(Global_114370.f_9088.f_99.f_219[num], offset))
+	if (IS_BIT_SET(Global_113969.f_9088.f_99.f_219[num], offset))
 	{
-		MISC::CLEAR_BIT(&Global_114370.f_9088.f_99.f_219[num], offset);
+		MISC::CLEAR_BIT(&Global_113969.f_9088.f_99.f_219[num], offset);
 		return 1;
 	}
 
 	return 0;
 }
 
-int func_4(int iParam0) // Position - 0x20F Hash - 0xFCBFD2CC ^0x1DBFD43E
+int func_4(int iParam0) // Position - 0x20F
 {
 	int num;
 	int offset;
@@ -183,10 +183,10 @@ int func_4(int iParam0) // Position - 0x20F Hash - 0xFCBFD2CC ^0x1DBFD43E
 		offset = iParam0 - 32;
 	}
 
-	if (IS_BIT_SET(Global_114370.f_9088.f_99.f_219[num], offset))
+	if (IS_BIT_SET(Global_113969.f_9088.f_99.f_219[num], offset))
 		return 0;
 
-	MISC::SET_BIT(&Global_114370.f_9088.f_99.f_219[num], offset);
+	MISC::SET_BIT(&Global_113969.f_9088.f_99.f_219[num], offset);
 	return 1;
 }
 

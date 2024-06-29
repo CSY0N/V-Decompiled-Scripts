@@ -62,7 +62,7 @@
 	var uLocal_60 = 0;
 	float fLocal_61 = 0f;
 	var uLocal_62 = 0;
-	var uLocal_63 = 0;
+	float fLocal_63 = 0f;
 	var uLocal_64 = 0;
 	var uLocal_65 = 0;
 	var uLocal_66 = 0;
@@ -111,11 +111,11 @@
 	var uLocal_109 = 0;
 	var uLocal_110 = 0;
 	var uLocal_111 = 0;
-	int iLocal_112 = 0;
+	var uLocal_112 = 0;
 	var uLocal_113 = 0;
-	float fLocal_114 = 0f;
+	int iLocal_114 = 0;
 	var uLocal_115 = 0;
-	var uLocal_116 = 0;
+	float fLocal_116 = 0f;
 	var uLocal_117 = 0;
 	var uLocal_118 = 0;
 	var uLocal_119 = 0;
@@ -149,16 +149,16 @@
 	var uLocal_147 = 0;
 	var uLocal_148 = 0;
 	var uLocal_149 = 0;
-	var uLocal_150 = 0;
-	var uLocal_151 = 0;
+	int iLocal_150 = 0;
+	int iLocal_151 = 0;
 	int iLocal_152 = 0;
-	int iLocal_153 = 0;
-	int iLocal_154 = 0;
-	var uLocal_155 = 0;
+	var uLocal_153 = 0;
+	var uLocal_154 = 0;
+	int iLocal_155 = 0;
 	var uLocal_156 = 0;
-	int iLocal_157 = 0;
+	char* sLocal_157 = 0;
 	var uLocal_158 = 0;
-	char* sLocal_159 = 0;
+	var uLocal_159 = 0;
 	var uLocal_160 = 0;
 	var uLocal_161 = 0;
 	var uLocal_162 = 0;
@@ -180,9 +180,9 @@
 	var uLocal_178 = 0;
 	var uLocal_179 = 0;
 	var uLocal_180 = 0;
-	var uLocal_181 = 0;
+	var uLocal_181 = 17;
 	var uLocal_182 = 0;
-	var uLocal_183 = 17;
+	var uLocal_183 = 0;
 	var uLocal_184 = 0;
 	var uLocal_185 = 0;
 	var uLocal_186 = 0;
@@ -198,9 +198,9 @@
 	var uLocal_196 = 0;
 	var uLocal_197 = 0;
 	var uLocal_198 = 0;
-	var uLocal_199 = 0;
+	var uLocal_199 = 17;
 	var uLocal_200 = 0;
-	var uLocal_201 = 17;
+	var uLocal_201 = 0;
 	var uLocal_202 = 0;
 	var uLocal_203 = 0;
 	var uLocal_204 = 0;
@@ -222,11 +222,9 @@
 	var uLocal_220 = 0;
 	var uLocal_221 = 0;
 	var uLocal_222 = 0;
-	var uLocal_223 = 0;
-	var uLocal_224 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
+void main() // Position - 0x0
 {
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -253,17 +251,18 @@ void main() // Position - 0x0 Hash - 0x5D84F89F ^0x5D84F89F
 	iLocal_40 = 49;
 	iLocal_41 = 64;
 	fLocal_61 = (0.05f + 0.275f) - 0.01f;
+	fLocal_63 = 0f;
 	fLocal_75 = 3f;
 	fLocal_76 = 0f;
 	fLocal_77 = 2f;
 	fLocal_78 = 100f;
-	iLocal_112 = -1;
-	fLocal_114 = 0.5f;
+	iLocal_114 = -1;
+	fLocal_116 = 0.5f;
+	iLocal_150 = -1;
+	iLocal_151 = -1;
 	iLocal_152 = -1;
-	iLocal_153 = -1;
-	iLocal_154 = -1;
-	iLocal_157 = 10;
-	sLocal_159 = "mp_bedmid";
+	iLocal_155 = 10;
+	sLocal_157 = "mp_bedmid";
 	return;
 }
 

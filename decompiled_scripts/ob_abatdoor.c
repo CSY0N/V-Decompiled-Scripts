@@ -12,7 +12,7 @@
 	Object obScriptParam_0 = 0;
 #endregion
 
-void main() // Position - 0x0 Hash - 0xDA7793D7 ^0xA5A7A61F
+void main() // Position - 0x0
 {
 	var unk;
 	var entityCoords;
@@ -74,7 +74,7 @@ void main() // Position - 0x0 Hash - 0xDA7793D7 ^0xA5A7A61F
 						{
 							if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael2")) > 0)
 							{
-								if (Global_97803)
+								if (Global_97944)
 								{
 									if (STREAMING::HAS_ANIM_DICT_LOADED("map_objects"))
 									{
@@ -101,7 +101,7 @@ void main() // Position - 0x0 Hash - 0xDA7793D7 ^0xA5A7A61F
 							}
 							else
 							{
-								Global_97804 = 1;
+								Global_97945 = 1;
 								iLocal_2 = 4;
 							}
 						}
@@ -125,7 +125,7 @@ void main() // Position - 0x0 Hash - 0xDA7793D7 ^0xA5A7A61F
 	return;
 }
 
-Vector3 func_1(float fParam0, var uParam1, var uParam2) // Position - 0x1C6 Hash - 0xFB6A39D2 ^0x80C9C759
+Vector3 func_1(float fParam0, var uParam1, var uParam2) // Position - 0x1C6
 {
 	float num;
 	float num2;
@@ -147,7 +147,7 @@ Vector3 func_1(float fParam0, var uParam1, var uParam2) // Position - 0x1C6 Hash
 	return fParam0;
 }
 
-BOOL func_2(float fParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, float fParam6, BOOL bParam7) // Position - 0x205 Hash - 0x1FB736D4 ^0x234AEAB7
+BOOL func_2(float fParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, float fParam6, BOOL bParam7) // Position - 0x205
 {
 	if (fParam6 < 0f)
 		fParam6 = 0f;
@@ -164,7 +164,7 @@ BOOL func_2(float fParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	return false;
 }
 
-BOOL func_3(float fParam0, var uParam1, var uParam2, float fParam3, float fParam4, float fParam5, BOOL bParam6) // Position - 0x280 Hash - 0x2D46096D ^0xEA41378F
+BOOL func_3(float fParam0, var uParam1, var uParam2, float fParam3, float fParam4, float fParam5, BOOL bParam6) // Position - 0x280
 {
 	if (bParam6)
 		return fParam0 == fParam3 && fParam0.f_1 == fParam3.f_1;
@@ -172,7 +172,7 @@ BOOL func_3(float fParam0, var uParam1, var uParam2, float fParam3, float fParam
 	return fParam0 == fParam3 && fParam0.f_1 == fParam3.f_1 && fParam0.f_2 == fParam3.f_2;
 }
 
-void func_4() // Position - 0x2C7 Hash - 0x9DFBFBA5 ^0xD2E326EF
+void func_4() // Position - 0x2C7
 {
 	if (ENTITY::DOES_ENTITY_EXIST(obLocal_3))
 		OBJECT::DELETE_OBJECT(&obLocal_3);
@@ -183,13 +183,13 @@ void func_4() // Position - 0x2C7 Hash - 0x9DFBFBA5 ^0xD2E326EF
 	return;
 }
 
-void func_5(char* sParam0) // Position - 0x2F2 Hash - 0x646928F0 ^0x646928F0
+void func_5(char* sParam0) // Position - 0x2F2
 {
 	func_6(sParam0);
 	return;
 }
 
-void func_6(char* sParam0) // Position - 0x300 Hash - 0xF54A2398 ^0xC5887C42
+void func_6(char* sParam0) // Position - 0x300
 {
 	MISC::ARE_STRINGS_EQUAL(sParam0, sParam0);
 	return;
